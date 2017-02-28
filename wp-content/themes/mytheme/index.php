@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 
 	<a name="home"></a>
-    <div class="banner" style="background:url(image/banner/s1.jpg)"> </div>
+    <div class="banner" style="background:url(<?php echo get_template_directory_uri(); ?>../image/banner/s1.jpg)"> </div>
     <div class="call_to_action">
         <a name="start"></a>
-        <div id="call_to_action_image"> <img src="image\snow_beach_chill.png"> </div>
+        <div id="call_to_action_image"> <img src="<?php echo get_template_directory_uri(); ?>../image/snow_beach_chill.png"> </div>
         <div id="call_to_action_button">
             <input type="submit" value="FIND FORHANDLER" id="calltoaction_button"> </div>
     </div>
@@ -21,21 +21,21 @@
             </h1> </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-4 products_area_image_align" style="background:url(image/p1.jpg)">
+                <div class="col-md-4 products_area_image_align" style="background:url(<?php echo get_template_directory_uri(); ?>../image/p1.jpg)">
                     <div class="products-content-area">
                         <h3>HÅRDFØR MATERIALE3R</h3>
                         <div class="product-area-square"></div>
                         <div class="product-area-content"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in quam et enim ornare dictum et faucibus est. Suspendisse pharetra vitae lectus ut pellentesque. </div>
                     </div>
                 </div>
-                <div class="col-md-4 products_area_image_align" style="background:url(image/p2.jpg)">
+                <div class="col-md-4 products_area_image_align" style="background:url(<?php echo get_template_directory_uri(); ?>../image/p2.jpg)">
                     <div class="products-content-area">
                         <h3>POLARISEREDE LINSER</h3>
                         <div class="product-area-square"></div>
                         <div class="product-area-content"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in quam et enim ornare dictum et faucibus est. Suspendisse pharetra vitae lectus ut pellentesque. </div>
                     </div>
                 </div>
-                <div class="col-md-4 products_area_image_align products_area_image_align" style="background:url(image/p3.jpg)">
+                <div class="col-md-4 products_area_image_align products_area_image_align" style="background:url(<?php echo get_template_directory_uri(); ?>../image/p3.jpg)">
                     <div class="products-content-area">
                         <h3>SNAP BAR HÆNGSLER</h3>
                         <div class="product-area-square"></div>
@@ -49,7 +49,7 @@
     <div class="feature_product">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-6 feature-product-image" style="background:url(image/b1.jpg)"> </div>
+                <div class="col-md-6 feature-product-image" style="background:url(<?php echo get_template_directory_uri(); ?>../image/b1.jpg)"> </div>
                 <div class="col-md-6 feature-product-desc">
                     <div id="feature-product-content">
                         <h2>I SOLEN<br>I SNEEN<br>I VANDET</h2>
@@ -72,10 +72,10 @@
 
             </h1>
                 <div class="row">
-                    <div class="col-md-3 gallery-image" style="background:url(image/gallery/2.jpg)"> </div>
-                    <div class="col-md-3 gallery-image" style="background:url(image/gallery/3.jpg)"> </div>
-                    <div class="col-md-3 gallery-image" style="background:url(image/gallery/4.jpg)"> </div>
-                    <div class="col-md-3 gallery-image" style="background:url(image/gallery/5.jpg)"> </div>
+                    <div class="col-md-3 gallery-image" style="background:url(<?php echo get_template_directory_uri(); ?>../image/gallery/2.jpg)"> </div>
+                    <div class="col-md-3 gallery-image" style="background:url(<?php echo get_template_directory_uri(); ?>../image/gallery/3.jpg)"> </div>
+                    <div class="col-md-3 gallery-image" style="background:url(<?php echo get_template_directory_uri(); ?>../image/gallery/4.jpg)"> </div>
+                    <div class="col-md-3 gallery-image" style="background:url(<?php echo get_template_directory_uri(); ?>../image/gallery/5.jpg)"> </div>
                 </div>
             </div>
         </div>

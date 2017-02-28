@@ -1,7 +1,7 @@
     <div class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 logo-image"> <img src="image/logo_gry.png" class="logo-image"> <img src="image/snow_beach_chill_gry.png" class="tagline-image"> </div>
+                <div class="col-md-12 logo-image"> <img src="<?php echo get_template_directory_uri(); ?>../image/logo_gry.png" class="logo-image"> <img src="<?php echo get_template_directory_uri(); ?>../image/snow_beach_chill_gry.png" class="tagline-image"> </div>
             </div>
         </div>
     </div>

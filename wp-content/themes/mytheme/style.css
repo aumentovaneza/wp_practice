@@ -15,10 +15,6 @@
 /*
 Header section
 */
-@font-face {
-    font-family: brandonfont;
-    src: url(<?php echo get_template_directory_uri(); ?>/fonts/brandon.otf)
-}
 
 body {
     margin: 0px;
