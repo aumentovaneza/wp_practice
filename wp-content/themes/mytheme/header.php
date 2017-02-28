@@ -15,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="<?php bloginfo('description'); ?>">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>../css/style.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>../css/responsive.css">
+
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>../css/bootstrap.css">
     <?php wp_head(); ?>
         <script>
@@ -46,4 +46,5 @@
             </div>
             <!--/.container-fluid -->
         </nav>
+        <div class="vn-clear"></div>
     </div>
