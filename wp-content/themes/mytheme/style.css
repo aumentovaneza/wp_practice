@@ -643,4 +643,7 @@ Footer Section
         width: 226px;
         padding-bottom: 0px;
     }
+    .gallery-image{
+        width: 100%;
+    }
 }
