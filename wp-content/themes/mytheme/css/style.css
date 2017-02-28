@@ -1,0 +1,484 @@
+/*
+	Theme Name: HTML5 Blank
+	Theme URI: http://html5blank.com
+	Description: CSS Custom Theme
+	Version: 1.4.3
+	Author: Vaneza Aumento
+	Tags: Blank, HTML5, CSS3
+
+*/
+
+/*------------------------------------*\
+    MAIN
+\*------------------------------------*/
+
+/*
+Header section
+*/
+
+body {
+    margin: 0px;
+    font-family: brandonfont;
+}
+
+.header,
+.navbar,
+.navbar-default {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.navbar-brand {
+    /*  margin-left: 100px;*/
+    margin-top: 15px;
+    float: left;
+}
+
+.navbar-default {
+    background: none !important;
+    border: none !important;
+}
+
+#navbar {
+    margin-top: 20px;
+    float: right;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+#navbar li {
+    float: left;
+}
+
+#navbar a {
+    display: inline-block;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-right: 70px;
+    color: white;
+    font-family: brandonfont;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.header-stick {
+    background: black;
+    padding: 10px 0px !important;
+}
+
+.navbar-brand img {
+    max-width: 100%;
+    width: 100%;
+    height: auto !important;
+}
+
+
+/*
+Menu hover effects
+*/
+
+.menu a:hover {
+    text-decoration: none;
+    color: white;
+    border-bottom: 5px solid #75B88D;
+}
+
+
+/*
+Banner section
+*/
+
+.banner {
+    position: relative;
+    background-size: cover !important;
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat !important;
+}
+
+
+/*
+Call to action section
+*/
+
+.call_to_action {
+    background-color: #75B88D;
+    padding: 35px;
+    margin-top: -5px;
+}
+
+#call_to_action_image {
+    float: left;
+    margin-left: 30px;
+    margin-top: -20px;
+}
+
+#call_to_action_button {
+    float: right;
+    background-color: white;
+    padding: 10px 15px;
+    margin: -23px;
+    margin-right: 100px;
+}
+
+#call_to_action_button input[type="submit"] {
+    display: inline-block;
+    text-decoration: none;
+    color: #75B88D;
+    font-size: 15px;
+    font-weight: bolder;
+    overflow: hidden;
+    font-family: brandonfont;
+    border: none;
+    background: white;
+}
+
+#call_to_action_button a:hover {
+    text-decoration: underline;
+    color: #337ab7;
+}
+
+
+/*
+Products Area section
+}*/
+
+.products-content-area {
+    margin-top: 300px;
+}
+
+.products_area {
+    padding-bottom: 100px;
+}
+
+.first-half-text {
+    color: #e16566;
+    display: inline-block;
+}
+
+#header1_body,
+#header1_body h1 {
+    font-size: 30px;
+    font-family: brandonfont;
+    margin: 70px 0px 80px 0px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.products_area h3 {
+    color: #e16566;
+    font-weight: 700;
+    width: 150px;
+    padding-bottom: 15px;
+    font-family: brandonfont;
+}
+
+.products_area_image_align {
+    float: left;
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: contain !important;
+}
+
+.product-area-square {
+    float: left;
+    width: 18%;
+    height: 5px;
+    background-color: #676767;
+    margin-bottom: 20px;
+}
+
+.product-area-content {
+    width: 300px;
+    float: left;
+}
+
+
+/*
+Feature Product Section
+*/
+
+.feature_product {
+    margin-top: 250px;
+}
+
+.feature-product-image {
+    float: left;
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat !important;
+}
+
+.feature-product-image:before {
+    content: "";
+    background-image: url(/image/opacity.png);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 33px;
+    display: block;
+    height: 100%;
+}
+
+.feature-product-desc {
+    background-color: #e16566;
+    width: 100%;
+    height: 500px;
+}
+
+.feature-product-desc h2 {
+    font-size: 48px;
+    color: white;
+    width: 218px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#feature-product-square {
+    float: left;
+    width: 10%;
+    height: 5px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+#feature-product-content {
+    padding-top: 100px;
+    padding-left: 50px;
+}
+
+#feature-main-content {
+    margin-top: 20px;
+    float: left;
+    color: white;
+    width: 400px;
+    margin-left: -60px;
+}
+
+
+/*
+Gallery Section
+*/
+
+.gallery_area {
+    margin-bottom: 100px;
+}
+
+#header1_gallery h1 {
+    font-size: 30px;
+    font-family: brandonfont;
+    margin: 70px 0px 80px 0px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.gallery-image {
+    float: left;
+    height: 220px;
+    width: 100%;
+    background-repeat: no-repeat !important;
+    background-size: cover!important;
+}
+
+
+/*
+Contact Table Section
+*/
+
+.contact_websites {
+    background-color: #5fcab5;
+    padding-bottom: 70px;
+}
+
+.contact_websites h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
+    font-family: brandonfont;
+    font-weight: 900;
+}
+
+.first-half-text-table {
+    color: #074b3e;
+}
+
+#header1_table h1 {
+    color: white;
+}
+
+.contact_websites h3 {
+    text-align: center;
+    font-size: 25px;
+    font-family: brandonfont;
+    color: white;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.table-striped td,
+.table-striped tr {
+    padding: 12px !important;
+    border: none !important;
+    color: white;
+    font-family: brandonfont;
+}
+
+.table-striped tr:nth-child(odd)>td {
+    background-color: #31a38d;
+    border-width: 0px;
+}
+
+.site_name {
+    font-weight: bolder;
+}
+
+.site_address {
+    text-align: right;
+}
+
+
+/*
+Contact Us Form Section
+*/
+
+.contactus_form {
+    background-color: #a3a3a3;
+}
+
+.text_red {
+    color: #e16566;
+}
+
+#contactus_textarea {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#contactus_textarea h1 {
+    font-family: brandonfont;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+#contactus_square {
+    float: none;
+    width: 5%;
+    height: 6px;
+    background-color: #3a3a3a;
+    margin-bottom: 20px;
+    margin: 0 auto;
+}
+
+#contactus_textarea p {
+    margin-top: 10px;
+    display: inline-block;
+    color: white;
+    width: 600px;
+}
+
+#contactus_fieldarea {
+    text-align: center;
+    margin: 0 auto;
+    width: 500px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+#contactus_fieldarea label {
+    float: left;
+    margin: 0 auto;
+    background-color: #3a3a3a;
+    color: white;
+    font-size: 15px;
+    text-align: left !important;
+    padding: 9.50px 20px;
+    width: 20%;
+}
+
+#contactus_fieldarea input,
+textarea {
+    border-radius: 0px;
+    background: #5d5d5d;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 80%;
+}
+
+#name_textarea,
+#email_textarea,
+#message_textarea {
+    float: left;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+#name_field,
+#email_field,
+#message_field {
+    float: left;
+    width: 100%;
+}
+
+#message_textarea {
+    height: 120px;
+}
+
+.message_area {
+    height: 120px;
+}
+
+#name_textarea,
+#email_textarea {
+    height: 40px;
+}
+
+.vn-clear {
+    clear: both;
+}
+
+#contactus_fieldarea input[type=submit] {
+    background-color: #e06667;
+    margin: 0 auto;
+    float: none !important;
+    width: 110px !important;
+    display: block;
+    padding: 10px 25px;
+    font-weight: bold;
+}
+
+
+/*
+Footer Section
+*/
+
+.footer {
+    background-color: #2d2d2d;
+    width: 100%;
+}
+
+.logo-image {
+    padding: 10px;
+    float: left !important;
+    background-repeat: no-repeat !important;
+}
+
+.tagline-image {
+    float: right !important;
+    padding: 15px;
+    background-repeat: no-repeat !important;
+}
