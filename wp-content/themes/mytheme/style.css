@@ -15,6 +15,10 @@
 /*
 Header section
 */
+@font-face {
+    font-family: brandonfont;
+    src: url(fonts/brandon.otf)
+}
 
 body {
     margin: 0px;
@@ -224,7 +228,7 @@ Feature Product Section
 
 .feature-product-image:before {
     content: "";
-    background-image: url(/image/opacity.png);
+    background-image: url(image/opacity.png);
     position: absolute;
     top: 0px;
     right: 0px;
