@@ -35,12 +35,9 @@
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand image-responsive" href="#home"><img src="<?php echo get_template_directory_uri(); ?>../image/logo.png"></a> </div>
                 <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#start">START</a></li>
-                        <li><a href="#omsidebar">OM SIDEBAR</a></li>
-                        <li><a href="#findforhandler">FIND FORHANDLER</a></li>
-                        <li><a href="#contact">CONTACT</a></li>
-                    </ul>
+
+                    <?php html5blank_nav(); ?>
+
                 </div>
                 <!--/.nav-collapse -->
             </div>
