@@ -23,6 +23,7 @@ Header section
 body {
     margin: 0px;
     font-family: brandonfont;
+    font-weight: 100;
 }
 
 .header,
@@ -601,12 +602,12 @@ Footer Section
         font-size: 28px;
     }
     #header1_gallery h1 {
-        font-size: 30px;
+        font-size: 27px;
         font-weight: 900;
         text-align: center;
-        margin-top: -198px;
+        margin-top: -232px;
         margin-bottom: 19px;
-        width: 370px;
+        width: 293px;
     }
     #name_field,
     #email_field,
@@ -643,11 +644,9 @@ Footer Section
         width: 226px;
         padding-bottom: 0px;
     }
-<<<<<<< HEAD
+
     .gallery-image {
-=======
-    .gallery-image{
->>>>>>> origin/master
         width: 100%;
     }
+
 }
