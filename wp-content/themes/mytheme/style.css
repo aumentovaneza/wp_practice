@@ -606,7 +606,7 @@ Footer Section
         text-align: center;
         margin-top: -198px;
         margin-bottom: 19px;
-        width: 300px;
+        width: 370px;
     }
     #name_field,
     #email_field,
@@ -643,7 +643,11 @@ Footer Section
         width: 226px;
         padding-bottom: 0px;
     }
+<<<<<<< HEAD
     .gallery-image {
+=======
+    .gallery-image{
+>>>>>>> origin/master
         width: 100%;
     }
 }
