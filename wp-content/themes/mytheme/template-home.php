@@ -1,7 +1,7 @@
 <?php /* Template Name: Home Page Template */ get_header(); ?>
     <?php if (have_posts()): while (have_posts()) : the_post(); ?>
         <a name="home"></a>
-        <div class="banner" style="background:url(<?php echo get_field(" home_page_banner ");?>)"> </div>
+        <div class="banner" style="background:url(<?php echo get_field("home_page_banner");?>)"> </div>
         <div class="call_to_action">
             <a name="start"></a>
             <div id="call_to_action_image"> <img src="<?php echo get_template_directory_uri(); ?>../image/snow_beach_chill.png"> </div>
@@ -21,7 +21,7 @@
             </h1> </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 products_area_image_align" style="background:url(<?php echo get_field(" product_area_1 ");?>">
+                    <div class="col-md-4 products_area_image_align" style="background:url(<?php echo get_field("product_area_1");?>">
                         <div class="products-content-area">
                             <h3>HÅRDFØR MATERIALE3R</h3>
                             <div class="product-area-square"></div>
@@ -30,7 +30,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 products_area_image_align" style="background:url(<?php echo get_field(" product_area_2 ");?>">
+                    <div class="col-md-4 products_area_image_align" style="background:url(<?php echo get_field("product_area_2");?>">
                         <div class="products-content-area">
                             <h3>POLARISEREDE LINSER</h3>
                             <div class="product-area-square"></div>
@@ -39,7 +39,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 products_area_image_align products_area_image_align" style="background:url(<?php echo get_field(" product_area_3 ");?>">
+                    <div class="col-md-4 products_area_image_align products_area_image_align" style="background:url(<?php echo get_field("product_area_3");?>">
                         <div class="products-content-area">
                             <h3>SNAP BAR HÆNGSLER</h3>
                             <div class="product-area-square"></div>
@@ -103,26 +103,30 @@
                             <div class="table-responsive">
                                 <table class="table table-striped">
                                     <tbody>
-                                        <tr>
-                                            <td class="site_name">SKATESH.OP</td>
-                                            <td class="site_address">WWW.SKATESHOP.DK</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="site_name">SUR.F OG SKI</td>
-                                            <td class="site_address">WWW.SURFOGSKI.DK</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="site_name">FASHION GALLERY</td>
-                                            <td class="site_address">WWW.FASHIONGALLERY.DK</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="site_name">SOLBRILLESHOPPEN</td>
-                                            <td class="site_address">WWW.SOLBRILLESHOPPEN.DK</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="site_name">SPECTACOLOUS</td>
-                                            <td class="site_address">WWW.SPECTACOULOUS.DK</td>
-                                        </tr>
+                                        <?php
+                                            $query = new WP_Query(array(
+                                                'post_type' => 'webshops_table',
+                                                'post_status' => 'publish',
+                                                'posts_per_page' => -1
+                                            ));
+
+
+                                            while ($query->have_posts()) {
+                                                $query->the_post();
+                                        ?>
+
+                                            <tr>
+                                                <td class="site_name"><?php the_title()?></td>
+                                                <td class="site_address"><?php the_content()?></td>
+                                            </tr>
+
+                                        <?php
+
+                                            }
+
+                                            wp_reset_query();
+                                        ?>
+
                                     </tbody>
                                 </table>
                             </div>
@@ -132,36 +136,36 @@
                             <div class="table-responsive">
                                 <table class="table table-striped">
                                     <tbody>
-                                        <tr>
-                                            <td class="site_name">SKATESH.OP</td>
-                                            <td class="site_map_address">SANKT PEDERS VEJ 1, 2900 HELLERUP</td>
-                                            <td class="site_number">+45 45 45 45 45</td>
-                                            <td class="site_address">WWW.SKATESHOP.DK</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="site_name">SUR.F OG SKI</td>
-                                            <td class="site_map_address">SANKT PEDERS VEJ 1, 2900 HELLERUP</td>
-                                            <td class="site_number">+45 45 45 45 45</td>
-                                            <td class="site_address">WWW.SURFOGSKI.DK</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="site_name">FASHION GALLERY</td>
-                                            <td class="site_map_address">SANKT PEDERS VEJ 1, 2900 HELLERUP</td>
-                                            <td class="site_number">+45 45 45 45 45</td>
-                                            <td class="site_address">WWW.FASHIONGALLERY.DK</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="site_name">SOLBRILLESHOPPEN</td>
-                                            <td class="site_map_address">SANKT PEDERS VEJ 1, 2900 HELLERUP</td>
-                                            <td class="site_number">+45 45 45 45 45</td>
-                                            <td class="site_address">WWW.SOLBRILLESHOPPEN.DK</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="site_name">SPECTACOLOUS</td>
-                                            <td class="site_map_address">SANKT PEDERS VEJ 1, 2900 HELLERUP</td>
-                                            <td class="site_number">+45 45 45 45 45</td>
-                                            <td class="site_address">WWW.SPECTACOULOUS.DK</td>
-                                        </tr>
+
+                                          <?php
+                                           $args=array(
+                                             'post_type' => 'shops',
+                                             'post_status' => 'publish',
+                                             'posts_per_page' => -1,
+                                           );
+
+                                           $my_query = new WP_Query($args);
+                                           if( $my_query->have_posts() ) {
+                                             while ($my_query->have_posts()) : $my_query->the_post(); ?>
+
+                                            <tr>
+                                                <td class="site_name">
+                                                    <?php the_title()?>
+                                                </td>
+                                                <td class="site_map_address">
+                                                    <?php the_field("address")?>
+                                                </td>
+                                                <td class="site_number"><?php echo get_field("phone_number")?></td>
+                                                <td class="site_address"><?php echo get_field("website")?></td>
+                                            </tr>
+
+
+                                            <?php
+                                             endwhile;
+                                           }
+                                           wp_reset_query();  // Restore global post data stomped by the_post().
+
+                                          ?>
                                     </tbody>
                                 </table>
                             </div>
