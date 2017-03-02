@@ -408,6 +408,7 @@ Contact Us Form Section
     text-align: left !important;
     padding: 9.50px 20px;
     width: 20%;
+    margin-top: 20px;
 }
 
 #contactus_fieldarea input,
@@ -433,6 +434,7 @@ textarea {
 #message_field {
     float: left;
     width: 100%;
+    margin-top: -24px;
 }
 
 #message_textarea {
